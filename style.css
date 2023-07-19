@@ -1,0 +1,281 @@
+body{
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: 300px;
+   
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+}
+.left-box{
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+    width: 205px;
+    height: 135px;
+    border-radius: 5px 80px 5px 5px;
+}
+.left-header img{
+    width: 90px;
+    margin-bottom: 17px;
+    margin-top: 5px;
+}
+.icon-document{
+    width: 14px;
+    margin-right: 5px;
+    background-color: hsl(229, 57%, 11%);
+    padding: 7px 9px;
+    border-radius: 7px;
+}
+.icon-folder{
+    width: 16px;
+    margin-right: 5px;
+    background-color: hsl(229, 57%, 11%);
+    padding: 9px 8px;
+    border-radius: 7px;
+}
+.icon-upload{
+    width: 17px;
+    margin-right: 5px;
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px 8px;
+    border-radius: 7px;
+}
+.right-box{
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    width: 355px;
+    height: 105px;
+    border-radius: 7px;
+    margin-top: 30px;
+    color: hsl(0, 0%, 95%);
+    position: relative;
+}
+.right-text{
+    font-size: 0.6em;
+    color: hsl(243, 100%, 93%);
+}
+.inner{
+    font-weight: 700;
+}
+.storage-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.storage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17em;
+    margin-top: -5px;
+}
+.storage-tab{
+    width: 325px;
+    height: 13px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    position: relative;
+}
+.storageTab-inner{
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    position: absolute;
+    width: 240px;
+    height: 10.5px;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1.5px solid hsl(229, 57%, 11%);
+}
+.inner-tab{
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    width: 7.2px;
+    height: 7.2px;
+    border-radius: 50%;
+    z-index: 2;
+    right: 1.5px;
+    top: 1.4px;
+}
+.storage p{
+    font-size: 0.6em;
+    font-weight: 700;
+    color: hsl(243, 100%, 93%);
+}
+.gigabyte{
+    font-size: 0.8em;
+}
+.popover-box{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background-color: hsl(0, 0%, 100%);
+    top: -34px;
+    right: 30px;
+    border-radius: 8px 8px 0px 8px;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid hsl(0, 0%, 100%);
+    border-top: 10px solid hsl(0, 0%, 100%);
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+}
+.popover-content{
+    color: hsl(229, 57%, 11%);
+    font-weight: 700;
+    font-size: 1.7em;
+    padding: 5px;
+    width: 120px;
+    height: 30px;
+    margin-top: -23px;
+    margin-left: 10px;
+    position: relative;
+}
+.popover-inner{
+    color: hsl(229, 7%, 55%);
+    text-transform: uppercase;
+    font-size: 0.3em;
+    top: 45px;
+    right: 40px;
+    position: absolute;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width: 600px){
+    body{
+        background-color: hsl(229, 57%, 11%);
+        background-image: url(images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 410px 900px;
+        background-position: 0px 0px;
+    }
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .main{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .left-box{
+        padding-left: 40px;
+        width: 240px;
+        height: 180px;
+        border-radius: 10px 80px 10px 10px;
+        margin-top: 120px;
+    }
+    .left-header img{
+        width: 110px;
+        margin-bottom: 25px;
+    }
+    .icon-document{
+        width: 18px;
+        margin-right: 10px;
+        padding: 9px 11px;
+    }
+    .icon-folder{
+        width: 20px;
+        margin-right: 10px;
+        padding: 12px 10px;
+    }
+    .icon-upload{
+        width: 24px;
+        margin-right: 10px;
+        padding: 13px 9px;
+    }
+    .right-box{
+        width: 260px;
+        height: 133px;
+        border-radius: 10px;
+        margin-top: 0px;
+        gap: 0.2em;
+    }
+    .right-text{
+        font-size: 0.75em;
+        padding: 10px 20px 0px 20px;
+    }
+    .storage{
+        gap: 9em;
+        margin-top: -5px;
+        margin-bottom: 25px;
+        margin-left: 5px;
+    }
+    .storage-tab{
+        width: 220px;
+        height: 17px;
+        margin-left: 8px
+    }
+    .storageTab-inner{
+        width: 160px;
+        height: 13.5px;
+    }
+    .inner-tab{
+        width: 9px;
+        height: 9px;
+        top: 2px;
+    }
+    .storage p{
+        font-size: 0.7em;
+    }
+    .gigabyte{
+        font-size: 0.9em;
+    }
+    .popover-box{
+        width: 145px;
+        height: 60px;
+        top: 105px;
+        right: 70px;
+        border-radius: 10px;
+    }
+    .arrow{
+       display: none;
+    }
+    .popover-content{
+        font-size: 2em;
+        padding: 5px;
+        margin-top: -25px;
+        margin-left: 10px;
+    }
+    .popover-inner{
+        font-size: 0.35em;
+        top: 50px;
+        right: 17px;
+    }
+    .attribution { 
+      margin-top: 190px;
+    }
+}
